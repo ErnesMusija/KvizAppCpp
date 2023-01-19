@@ -99,7 +99,6 @@ void __fastcall TKlikForma::zatvori(TObject *Sender, TCloseAction &Action)
 
 void __fastcall TKlikForma::IzlazDugmeClick(TObject *Sender)
 {
-		NavigacijaForma->UkupniBodovi->Text = NavigacijaForma->ukupni_bodovi;
 		this->Close();
 		NavigacijaForma->Show();
 }

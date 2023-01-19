@@ -266,7 +266,6 @@ if(*result==*topscore){
 						}
 
 	NavigacijaForma->BrojButton->Enabled = false;
-	NavigacijaForma->ukupni_bodovi += skor; // ukupni_bodovi je deklarisana Navigacija.h
 	NavigacijaForma->UkupniBodovi->Text = NavigacijaForma->ukupni_bodovi;
 	ButtonNum1->Enabled = false;
 	ButtonNum2->Enabled = false;
@@ -331,7 +330,7 @@ void __fastcall TBrojForma::IzlazPraviClick(TObject *Sender)
 //---------------------------------------------------------------------------
 
 void __fastcall TBrojForma::zatvori(TObject *Sender, TCloseAction &Action)
-{
+{       NavigacijaForma->ukupni_bodovi += skor; // ukupni_bodovi je deklarisana Navigacija.h
 		NavigacijaForma->BrojButton->Enabled = false;
 		this->Close();
 		NavigacijaForma->Show();

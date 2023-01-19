@@ -1,7 +1,7 @@
 object NavigacijaForma: TNavigacijaForma
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Meni'
   ClientHeight = 618
   ClientWidth = 717
   Fill.Bitmap.Bitmap.PNG = {
@@ -10679,7 +10679,7 @@ object NavigacijaForma: TNavigacijaForma
     Size.Height = 41.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 3
-    Text = 'Moj broj'
+    Text = 'Broj'
     TextSettings.Font.Family = 'Copperplate Gothic'
     TextSettings.Font.Size = 14.000000000000000000
     TextSettings.Font.StyleExt = {00020000000000000004000000}
@@ -10721,16 +10721,16 @@ object NavigacijaForma: TNavigacijaForma
     Size.Height = 41.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
-    Text = 'Ko zna zna'
+    Text = 'Zaokruzi'
     TextSettings.Font.Family = 'Copperplate Gothic'
     TextSettings.Font.Size = 14.000000000000000000
     TextSettings.Font.StyleExt = {00020000000000000004000000}
     OnClick = ZaokruziButtonClick
   end
   object UkupniBodovi: TText
-    Position.X = 256.000000000000000000
-    Position.Y = 328.000000000000000000
-    Size.Width = 177.000000000000000000
+    Position.X = 384.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 49.000000000000000000
     Size.Height = 65.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Family = 'Consolas'
@@ -10765,5 +10765,17 @@ object NavigacijaForma: TNavigacijaForma
   object WaterTransitionEffect1: TWaterTransitionEffect
     Progress = 30.000000000000000000
     RandomSeed = 0.300000011920929000
+  end
+  object Text1: TText
+    Position.X = 264.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Bodovi:'
+    TextSettings.Font.Family = 'Consolas'
+    TextSettings.Font.Size = 28.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claAzure
   end
 end

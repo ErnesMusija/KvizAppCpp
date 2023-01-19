@@ -24,6 +24,7 @@ __published:	// IDE-managed Components
 	TText *SingleplayerText;
 	TText *MultiplayerText;
 	TWaterTransitionEffect *WaterTransitionEffect1;
+	TText *Text1;
 	void __fastcall BrojButtonClick(TObject *Sender);
 	void __fastcall SpajanjeButtonClick(TObject *Sender);
 	void __fastcall KlikButtonClick(TObject *Sender);

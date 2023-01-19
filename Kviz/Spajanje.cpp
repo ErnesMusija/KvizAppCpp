@@ -105,6 +105,16 @@ void omoguci_desne(){
 	}
 
 }
+void onemoguci_desne(){
+	SpajanjeForma->Desno1->Enabled = false;
+	SpajanjeForma->Desno2->Enabled = false;
+	SpajanjeForma->Desno3->Enabled = false;
+	SpajanjeForma->Desno4->Enabled = false;
+	SpajanjeForma->Desno5->Enabled = false;
+	SpajanjeForma->Desno6->Enabled = false;
+	SpajanjeForma->Desno7->Enabled = false;
+	SpajanjeForma->Desno8->Enabled = false;
+}
 
 void dodaj_zadatak(){ //cita iz filea i dodaje zadatke
 	fstream lijeva_strana_file;
@@ -411,6 +421,8 @@ void __fastcall TSpajanjeForma::Desno1Click(TObject *Sender)
 		skor = skor + 2;
 		Desno1->Enabled = false;
 		tacni_desni.push_back(1);
+	}else{
+		onemoguci_desne();
 	}
 	TestText->Text = skor;
 	izabrane_lijeve.push_back(izabrana_lijeva);
@@ -425,6 +437,8 @@ void __fastcall TSpajanjeForma::Desno2Click(TObject *Sender)
 		skor = skor + 2;
 		Desno2->Enabled = false;
 		tacni_desni.push_back(2);
+	}else{
+		onemoguci_desne();
 	}
 
 	TestText->Text = skor;
@@ -440,6 +454,8 @@ void __fastcall TSpajanjeForma::Desno3Click(TObject *Sender)
 		skor = skor + 2;
 		Desno3->Enabled = false;
 		tacni_desni.push_back(3);
+	}else{
+		onemoguci_desne();
 	}
 
 	TestText->Text = skor;
@@ -455,6 +471,8 @@ void __fastcall TSpajanjeForma::Desno4Click(TObject *Sender)
 		skor = skor + 2;
 		Desno4->Enabled = false;
 		tacni_desni.push_back(4);
+	}else{
+		onemoguci_desne();
 	}
 
 	TestText->Text = skor;
@@ -470,6 +488,8 @@ void __fastcall TSpajanjeForma::Desno5Click(TObject *Sender)
 		skor = skor + 2;
 		Desno5->Enabled = false;
 		tacni_desni.push_back(5);
+	}else{
+		onemoguci_desne();
 	}
 
 	TestText->Text = skor;
@@ -485,6 +505,8 @@ void __fastcall TSpajanjeForma::Desno6Click(TObject *Sender)
 		skor = skor + 2;
 		Desno6->Enabled = false;
 		tacni_desni.push_back(6);
+	}else{
+		onemoguci_desne();
 	}
 
 	TestText->Text = skor;
@@ -500,6 +522,8 @@ void __fastcall TSpajanjeForma::Desno7Click(TObject *Sender)
 		skor = skor + 2;
 		Desno7->Enabled = false;
 		tacni_desni.push_back(7);
+	}else{
+		onemoguci_desne();
 	}
 
 	TestText->Text = skor;
@@ -515,6 +539,8 @@ void __fastcall TSpajanjeForma::Desno8Click(TObject *Sender)
 		skor = skor + 2;
 		Desno8->Enabled = false;
 		tacni_desni.push_back(8);
+	}else{
+		onemoguci_desne();
 	}
 
 	TestText->Text = skor;

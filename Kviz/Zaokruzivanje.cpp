@@ -234,8 +234,7 @@ void __fastcall TZaokruzivanjeForma::PotvrdiButtonClick(TObject *Sender)
 	else{
         // kad nestane pitanja ili se odgovori na dovoljno pitanja
 		NavigacijaForma->ZaokruziButton->Enabled = false;
-		NavigacijaForma->ukupni_bodovi += skor; // ukupni_bodovi je deklarisana Navigacija.h
-		NavigacijaForma->UkupniBodovi->Text = NavigacijaForma->ukupni_bodovi;
+
 		this->Close();
 		NavigacijaForma->Show();
 	}
@@ -245,7 +244,8 @@ void __fastcall TZaokruzivanjeForma::PotvrdiButtonClick(TObject *Sender)
 //---------------------------------------------------------------------------
 void __fastcall TZaokruzivanjeForma::zatvaranje(TObject *Sender, TCloseAction &Action)
 
-{
+{       NavigacijaForma->ukupni_bodovi += skor; // ukupni_bodovi je deklarisana Navigacija.h
+		NavigacijaForma->UkupniBodovi->Text = NavigacijaForma->ukupni_bodovi;
 		NavigacijaForma->ZaokruziButton->Enabled = false;
 		this->Close();
 		NavigacijaForma->Show();

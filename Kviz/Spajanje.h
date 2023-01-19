@@ -32,6 +32,7 @@ __published:	// IDE-managed Components
 	TButton *Desno6;
 	TButton *Desno7;
 	TButton *Desno8;
+	TText *Text1;
 	void __fastcall IzlazButtonClick(TObject *Sender);
 	void __fastcall Lijevo1Click(TObject *Sender);
 	void __fastcall Lijevo2Click(TObject *Sender);

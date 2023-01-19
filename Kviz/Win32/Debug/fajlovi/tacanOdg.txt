@@ -5,7 +5,6 @@ Strak
 Zec
 Mobitele
 Mozak
-Zuta
 Banana
 6
 Apple
